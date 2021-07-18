@@ -1,4 +1,7 @@
 package repository;
 
-public interface LibroRepository {
+import model.Libro;
+import org.springframework.data.mongodb.repository.MongoRepository;
+
+public interface LibroRepository  extends MongoRepository<Libro, String> {
 }
